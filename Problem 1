@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+  int a = 3;
+  int b = 5;
+  int s = 0;
+  
+  while (a < 1000) {
+      s += a;
+      a += 3;
+  }
+  while (b < 1000) {
+      s += b;
+      if (b % 3 == 0) {
+          s -= b;
+      }
+      b += 5;
+  }
+
+  std::cout << s;
+  
+}
